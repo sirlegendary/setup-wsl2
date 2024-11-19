@@ -21,7 +21,7 @@ PACKAGES=(
   "jq"
   "ansible"
 )
-HASHICORP_TOOLS=("nomad" "vault" "consul" "packer")
+HASHICORP_TOOLS=("nomad" "vault" "consul" "packer" "boundary")
 TFENV_DIR="$HOME/.tfenv"
 REPO_DIR="$HOME/workspace/setup-wsl2"
 BASHRC_CUSTOM="$REPO_DIR/custom_bashrc"
