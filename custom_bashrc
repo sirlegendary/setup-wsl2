@@ -1,0 +1,3 @@
+# 1Password - https://developer.1password.com/docs/ssh/integrations/wsl
+alias ssh='ssh.exe'
+alias ssh-add='ssh-add.exe'
