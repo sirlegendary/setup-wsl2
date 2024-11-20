@@ -29,6 +29,10 @@ This script installs essential development tools, CLIs, and packages for a new W
     ```bash
     bash setup-wsl2.sh
     ```
+    - Run only for a specific function:
+        ```bash
+        bash setup-wsl2.sh install_packages
+        ```
 3. Reload your shell to apply changes:
     ```bash
     source ~/.bashrc
