@@ -21,6 +21,7 @@ PACKAGES=(
   "jq"
   "ansible"
   "podman"
+  "podman-compose"
 )
 HASHICORP_TOOLS=("nomad" "vault" "consul" "packer" "boundary")
 TFENV_DIR="$HOME/.tfenv"
