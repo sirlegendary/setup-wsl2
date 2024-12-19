@@ -140,7 +140,7 @@ function main() {
     install_tfenv
     install_aws_cli
     install_gcloud_cli
-    install_podman
+    # install_podman
 
     printf "Setting up custom bashrc...\n"
     setup_bashrc

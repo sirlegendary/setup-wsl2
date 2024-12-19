@@ -57,6 +57,7 @@ function main() {
     ensure_agent_config
     ensure_ssh_config
     printf "Setup complete. Get ~/.gitconfig from 1Password and reload your shell to apply changes.\n"
+    printf "Run 'ssh-add.exe -l' and 'ssh.exe -T git@github.com' to test.\n"
 }
 
 # Execute main function
