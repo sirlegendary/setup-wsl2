@@ -103,19 +103,6 @@ function install_gcloud_cli() {
     fi
 }
 
-function install_podman() {
-    if ! command -v podman &>/dev/null; then
-        printf "Installing Podman...\n"
-        source /etc/os-release
-        # Force compatibility with Ubuntu 22.04 repository
-        echo "deb [signed-by=/usr/share/keyrings/podman-archive-keyring.gpg] https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/Ubuntu_22.04/ /" | sudo tee /etc/apt/sources.list.d/podman.list
-        curl -fsSL https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/Ubuntu_22.04/Release.key | sudo gpg --dearmor -o /usr/share/keyrings/podman-archive-keyring.gpg
-        sudo apt update && sudo apt install -y podman
-    else
-        printf "Podman is already installed, skipping...\n"
-    fi
-}
-
 function setup_bashrc() {
     printf "Setting up custom .bashrc configurations...\n"
     if [[ -f "$BASHRC_CUSTOM" ]]; then
@@ -140,7 +127,6 @@ function main() {
     install_tfenv
     install_aws_cli
     install_gcloud_cli
-    # install_podman
 
     printf "Setting up custom bashrc...\n"
     setup_bashrc
