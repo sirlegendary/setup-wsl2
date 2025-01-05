@@ -73,3 +73,6 @@ alias ssh='ssh.exe'
 alias ssh-add='ssh-add.exe'
 ```
 The script will append the contents of this file to your `~/.bashrc` during execution.
+
+### Note
+I was having issues running ansible in wsl with 1password. Had to setup 1password agent by following the [this guide](https://gist.github.com/WillianTomaz/a972f544cc201d3fbc8cd1f6aeccef51)
